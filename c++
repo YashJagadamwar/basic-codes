@@ -54,3 +54,23 @@ public:
         }
     
 };
+
+// Online C++ compiler to run C++ program online
+// remove duplicates from sorted array
+#include <iostream>
+#include<vector>
+using namespace std;
+int main() {
+   vector<int> arr={1,1,2,2,3,3,4,5,5};
+   int j=0;
+   for(int i=0;i<arr.size();i++){
+       if(arr[i]!=arr[i+1] || i==arr.size()-1)
+       {arr[j]=arr[i];
+       j++;}
+       }cout<<"k is : "<<j<<endl;
+
+   for(int i=0;i<j;i++){
+       cout<<arr[i];
+   }
+    return 0;
+}
