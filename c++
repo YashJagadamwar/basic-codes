@@ -102,3 +102,29 @@ int main() {
    }
     return 0;
 }
+
+
+// Online C++ compiler to run C++ program online
+// move zeros without using vector array
+#include <iostream>
+#include<vector>
+using namespace std;
+int main() {
+    int j=0;
+   vector<int> arr={1,0,1,0,2,0,0,2,3,3,4,5,5};
+  
+ int z=arr.size();
+ for(int i=0;i<z;i++){
+     if(arr[i]==0){
+     
+     continue;
+     }arr[j]=arr[i];
+     j++;
+   }
+   for(int i=j;i<arr.size();i++){
+       arr[i]=0;
+   }
+   for(int x : arr)
+   cout<<" "<<x;
+    return 0;
+}
