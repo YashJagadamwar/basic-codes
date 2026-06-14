@@ -1,4 +1,3 @@
-// Online C++ compiler to run C++ program online
 // code for intersection of an array 
 #include <iostream>
 #include<vector>
@@ -23,3 +22,22 @@ int main() {
   
     return 0;
 }
+
+
+
+//leetcode two sum problem
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        unordered_map<int,int> mp;
+         
+        for(int i=0;i<nums.size();i++){
+        int z=target-nums[i];
+        if(mp.find(z)!=mp.end()){
+        return {mp[z],i};}
+
+       mp[nums[i]]=i;
+        }
+     return{};}
+    
+};
