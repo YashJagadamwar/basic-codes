@@ -74,3 +74,31 @@ int main() {
    }
     return 0;
 }
+
+
+
+// Online C++ compiler to run C++ program online
+// move zeros
+#include <iostream>
+#include<vector>
+using namespace std;
+int main() {
+    int count=0,j=0;
+   vector<int> arr={1,0,1,0,2,0,0,2,3,3,4,5,5};
+   vector<int>ans;
+ int z=arr.size();
+ for(int i=0;i<z;i++){
+     if(arr[i]==0){
+     count++;
+     }
+     else{
+         ans.push_back(arr[i]);
+     }}
+     for(int i=0;i<count;i++){
+         ans.push_back(0);
+     }
+   for(int x : ans){
+       cout<<" "<<x;
+   }
+    return 0;
+}
