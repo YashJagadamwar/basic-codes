@@ -128,3 +128,29 @@ int main() {
    cout<<" "<<x;
     return 0;
 }
+
+
+// Online C++ compiler to run C++ program online
+// remove element without in-place (can use another array) with count of value
+#include <iostream>
+#include<vector>
+using namespace std;
+int main() {
+    int val,count=0,j;
+ vector<int> arr={1,2,3,4,5,4,1,2,3,4,2};
+ vector<int> ans;
+ cout<<"enter the value : ";
+ cin>>val;
+ for(int i=0;i<arr.size();i++){
+     if(arr[i]==val){
+         count++;
+         continue;
+     }
+         ans.push_back(arr[i]);
+     
+ }cout<<"count is "<<count<<endl;
+ for(int x : ans)
+ cout<<" "<<x;
+
+    return 0;
+}
