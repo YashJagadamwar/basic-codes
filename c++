@@ -169,3 +169,27 @@ public:
       }  return k;
     }
 };
+
+
+// longest coomon prefix
+// leetcode Q14
+#include <iostream>
+#include<vector>
+#include<string>
+using namespace std;
+int main() {
+  vector<string> s={"flower","flow","float"};
+ 
+  if(s.empty())
+  return 0;
+  for(int i=0;i<s[0].size();i++){
+  char ch=s[0][i];
+  for(int j=1;j<s.size();j++){
+      if(i>=s[j].size() || s[j][i]!=ch)
+     { cout<< s[0].substr(0,i);
+      return 0;}
+  }
+ }cout<<s[0];
+   return 0;
+
+}
