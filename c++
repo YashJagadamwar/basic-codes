@@ -193,3 +193,31 @@ int main() {
    return 0;
 
 }
+
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+#include<vector>
+using namespace std;
+int main() {
+  vector<int> arr={10,2,8,5,1};
+  if(arr.empty()){
+      cout<<0;
+      return 0;
+  }
+  int minprice=arr[0],maxprofit=0;
+  
+  for(int i=0;i<arr.size();i++){
+      if(arr[i]<minprice){
+          minprice=arr[i];
+      }
+      int profit=arr[i]-minprice;
+      if(profit>maxprofit){
+          maxprofit=profit;
+      }
+      
+  }
+  cout<<maxprofit;
+  
+    return 0;
+}
